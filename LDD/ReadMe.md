@@ -19,13 +19,41 @@ sudo apt upgrade
 
 We also need the build utils (make, gcc, ...)
 
-To Run the kernel module, follow the below steps:
+To Create the kernel module, follow the below steps:
 
 - Step1: Create a device file in .c and write the kernel module code
 - Step2: Create a Makefile
 - Step3: Open Makefile and specify the object file that should be built
 - Step4: Specify the directory where the kernel source code resides (/lib/modules/$(shell uname -r)/build)
 - Step5: Specify the directory containing the module source code resides (M=$(PWD))
+
+Steps to run:
+1. Create a simple_lkm.c file add the code
+2. Create a Makefile and add the code
+3. Run below command:
+
+```bash
+make
+```
+
+4. Insert the module into kernel by following command:
+
+```bash
+sudo insmod <module_name>.ko
+```
+
+5. Display the log: (10 indicates the number of lines to display)
+
+```bash
+sudo dmesg | tail -n 10
+```
+
+6. Remove the module from the kernel by following command:
+
+```bash
+sudo rmmod <module_name>
+```
+
 
 ## Contents
 
