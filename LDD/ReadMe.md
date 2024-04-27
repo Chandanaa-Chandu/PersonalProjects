@@ -20,6 +20,7 @@ sudo apt upgrade
 We also need the build utils (make, gcc, ...)
 
 To Run the kernel module, follow the below steps:
+
 - Step1: Create a device file in .c and write the kernel module code
 - Step2: Create a Makefile
 - Step3: Open Makefile and specify the object file that should be built
