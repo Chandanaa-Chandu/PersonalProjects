@@ -59,3 +59,6 @@ sudo rmmod <module_name>
 
 In this directory we can find the examples for:
 1. Simple Kernel Module
+2. Register a Device Number
+3. Create a device file dynamically
+4. Write into GPIO pin
