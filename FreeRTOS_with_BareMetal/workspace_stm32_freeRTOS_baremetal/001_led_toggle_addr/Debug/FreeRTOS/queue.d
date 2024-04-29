@@ -1,0 +1,23 @@
+FreeRTOS/queue.o: ../FreeRTOS/queue.c \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/FreeRTOS.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/FreeRTOSConfig.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/projdefs.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/portable.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/deprecated_definitions.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/mpu_wrappers.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/task.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/list.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/queue.h \
+ /home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/task.h
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/FreeRTOS.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/FreeRTOSConfig.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/projdefs.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/portable.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/deprecated_definitions.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/mpu_wrappers.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/task.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/list.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/queue.h:
+/home/chandana/Desktop/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/include/task.h:

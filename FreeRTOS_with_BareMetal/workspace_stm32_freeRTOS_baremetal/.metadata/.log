@@ -166,3 +166,9 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-04-29 11:34:15.675
 !MESSAGE Indexed '001_led_toggle_addr' (2 sources, 53 headers) in 2.45 sec: 1,948 declarations; 2,834 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-29 14:54:58.012
+!MESSAGE Indexed '001_led_toggle_addr' (15 sources, 71 headers) in 0.668 sec: 3,700 declarations; 10,610 references; 1 unresolved inclusions; 8 syntax errors; 23 unresolved names (0.16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-29 15:04:34.220
+!MESSAGE Indexed '001_led_toggle_addr' (15 sources, 72 headers) in 0.623 sec: 4,149 declarations; 14,487 references; 0 unresolved inclusions; 1 syntax errors; 3 unresolved names (0.016%)
