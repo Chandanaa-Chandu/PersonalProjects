@@ -1,0 +1,7 @@
+obj-m += timer.o
+
+module:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) module
+
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
