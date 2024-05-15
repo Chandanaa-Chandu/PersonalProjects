@@ -206,4 +206,3 @@ java.lang.Exception: Resource '/001_led_toggle_addr/Debug/FreeRTOS/Source/portab
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-05-08 15:29:56.471
 !MESSAGE Indexed '001_led_toggle_addr' (13 sources, 75 headers) in 0.416 sec: 4,050 declarations; 13,676 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.011%)
-

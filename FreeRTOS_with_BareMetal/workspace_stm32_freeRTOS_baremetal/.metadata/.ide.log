@@ -397,4 +397,3 @@
 2024-05-08 12:57:43,365 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
 2024-05-08 12:57:43,367 [INFO] ApiDb:448 - Save user favorites file C:\Users\chandanar/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2024-05-08 12:57:43,368 [INFO] ApiDb:452 - User favorites MCUs=[]
-
