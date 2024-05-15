@@ -1,0 +1,4 @@
+../Src/my_tasks.c:18:6:taskSetup	8	static
+../Src/my_tasks.c:25:6:timerTaskStart	16	static
+../Src/my_tasks.c:39:6:timerTask	24	static
+../Src/my_tasks.c:60:6:initTasks	8	static
