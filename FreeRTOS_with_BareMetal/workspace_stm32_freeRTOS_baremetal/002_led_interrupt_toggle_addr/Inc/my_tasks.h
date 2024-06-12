@@ -17,8 +17,7 @@ void initTasks(void);
 
 void taskSetup(void);
 
-void timerTaskStart(void);
-
-void timerTask(void* pvParameters);
+void isrHandleTaskCreate(void);
+void isrHandleTask(void *pvParameter);
 
 #endif /* MY_TASKS_H_ */

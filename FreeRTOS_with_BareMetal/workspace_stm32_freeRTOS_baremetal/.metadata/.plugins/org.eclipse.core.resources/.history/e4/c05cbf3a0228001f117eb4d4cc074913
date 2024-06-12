@@ -1,0 +1,19 @@
+/*
+ * exti.c
+ *
+ *  Created on: 11-Jun-2024
+ *      Author: chandanar
+ */
+#include "exti.h"
+
+/**
+ * @brief This function will initiate a External Interrupt for PA0
+ */
+void EXTI0Init(void) {
+	/* Disable gloabl interrupts (optional) */
+	__disable_irq();
+
+	/* Enable clock access to SYSCFG */
+	RCC
+}
+

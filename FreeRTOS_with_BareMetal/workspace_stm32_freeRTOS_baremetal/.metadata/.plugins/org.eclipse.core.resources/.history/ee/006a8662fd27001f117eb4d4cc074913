@@ -1,0 +1,42 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/* Declare the Task Handles */
+TaskHandle_t xReadButnTaskHandle = NULL;
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+	readButnTaskCreate();
+	isrHandleTaskCreate();
+}
+
+/**
+ * @brief This function will create a task which is to read the state of a push button
+ */
+void readButnTaskCreate(void) {
+	/* Create a new task */
+	xTaskCreate(
+			readButnTask,					// Function of a task
+			"Read Push Button Task",		// Name a task
+			configMINIMAL_STACK_SIZE,		// Stack size
+			NULL,							// Task parameters
+			tskIDLE_PRIORITY + 1,			// Priority of task
+			xReadButnTaskHandle);
+}
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}

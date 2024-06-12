@@ -1,0 +1,27 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/* Declare the task handles */
+TaskHandle_t xTimerTaskHandle = NULL;
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+
+}
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}

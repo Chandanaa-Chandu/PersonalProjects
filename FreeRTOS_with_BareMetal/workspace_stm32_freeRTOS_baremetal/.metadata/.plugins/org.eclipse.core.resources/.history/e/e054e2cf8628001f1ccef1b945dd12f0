@@ -1,0 +1,63 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/* Declaration of Task handles */
+TaskHandle_t xISRTaskHandle = NULL;
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+	isrHandleTaskCreate();
+}
+
+/**
+ * @brief This function will create a new task which will handle ISR
+ */
+void isrHandleTaskCreate(void) {
+	xTaskCreate(
+			isrHandleTask,				// Function of a task
+			"ISR Handle Task",			// Name of a task
+			configMINIMAL_STACK_SIZE,	// Stack size for a task
+			NULL,						// Task parameter
+			tskIDLE_PRIORITY + 1,		// Priority of a task
+			xISRTaskHandle);
+}
+
+void isrHandleTask(void* pvParamete) {
+	for (;;) {
+		// Wait for the notification
+		ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+
+		toggleLED();
+	}
+}
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}
+
+void EXTI0_IRQHandler(void){
+	if(EXTI_PR & (1U<<0)) {
+		/* Clear the PR Flag */
+		EXTI_PR |= (1U<<0);
+
+		BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+		// Notify the button task about button press
+		vTaskNotifyGiveFromISR(xISRTaskHandle, &xHigherPriorityTaskWoken);
+
+		// If giving the notification unblocks a higher priority task, request a context switch
+		portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	}
+}

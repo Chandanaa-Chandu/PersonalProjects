@@ -1,0 +1,44 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+	isrHandleTaskCreate();
+}
+
+
+
+void isrHandleTask(void *pvParameter) {
+	for (;;) {
+		uint32_t ulNotificationValue;
+
+		for (;;) {
+			// Wait for the notification
+			ulNotificationValue = ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+
+			if (ulNotificationValue != 0) {
+				// Notification received, handle it
+				toggleLED();
+			}
+		}
+	}
+}
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}
+
+

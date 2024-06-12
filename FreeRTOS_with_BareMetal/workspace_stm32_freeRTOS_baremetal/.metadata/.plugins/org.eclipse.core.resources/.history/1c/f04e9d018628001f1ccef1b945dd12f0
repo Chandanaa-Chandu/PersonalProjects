@@ -1,0 +1,41 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/* Declaration of Task handles */
+TaskHandle_t xISRTaskHandle = NULL;
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+	isrHandleTaskCreate();
+}
+
+/**
+ * @brief This function will create a new task which will handle ISR
+ */
+void isrHandleTaskCreate(void) {
+	xTaskCreate(
+			isrHandleTask,				// Function of a task
+			"ISR Handle Task",			// Name of a task
+			configMINIMAL_STACK_SIZE,	// Stack size for a task
+			NULL,						// Task parameter
+			tskIDLE_PRIORITY + 1,		// Priority of a task
+			xISRTaskHandle);
+}
+
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}

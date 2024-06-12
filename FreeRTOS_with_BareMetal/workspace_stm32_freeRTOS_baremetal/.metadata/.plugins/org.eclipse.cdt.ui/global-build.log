@@ -1,22 +1,63 @@
-16:03:45 **** Incremental Build of configuration Debug for project 001_led_toggle_addr ****
+12:42:01 **** Incremental Build of configuration Debug for project 002_led_interrupt_toggle_addr ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/my_tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/STM32_BareMetal_FreeRTOS/workspace_stm32_freeRTOS_baremetal/001_led_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_tasks.d" -MT"Src/my_tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/my_tasks.o"
-arm-none-eabi-gcc -o "001_led_toggle_addr.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Users\chandanar\Desktop\STM32_BareMetal_FreeRTOS\workspace_stm32_freeRTOS_baremetal\001_led_toggle_addr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="001_led_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 001_led_toggle_addr.elf
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc -o "002_led_interrupt_toggle_addr.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Users\chandanar\Desktop\GitHub\PersonalProjects\FreeRTOS_with_BareMetal\workspace_stm32_freeRTOS_baremetal\002_led_interrupt_toggle_addr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002_led_interrupt_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002_led_interrupt_toggle_addr.elf
  
-arm-none-eabi-size   001_led_toggle_addr.elf 
-arm-none-eabi-objdump -h -S  001_led_toggle_addr.elf  > "001_led_toggle_addr.list"
+arm-none-eabi-size   002_led_interrupt_toggle_addr.elf 
+arm-none-eabi-objdump -h -S  002_led_interrupt_toggle_addr.elf  > "002_led_interrupt_toggle_addr.list"
    text	   data	    bss	    dec	    hex	filename
-  10024	     16	  78792	  88832	  15b00	001_led_toggle_addr.elf
+  11044	     16	  78792	  89852	  15efc	002_led_interrupt_toggle_addr.elf
 Finished building: default.size.stdout
  
-Finished building: 001_led_toggle_addr.list
+Finished building: 002_led_interrupt_toggle_addr.list
  
-16:03:47 **** Incremental Build of configuration Debug for project 001_led_toggle_addr ****
+12:42:02 **** Incremental Build of configuration Debug for project 002_led_interrupt_toggle_addr ****
 make -j8 all 
-arm-none-eabi-size   001_led_toggle_addr.elf 
+arm-none-eabi-size   002_led_interrupt_toggle_addr.elf 
    text	   data	    bss	    dec	    hex	filename
-  10024	     16	  78792	  88832	  15b00	001_led_toggle_addr.elf
+  11044	     16	  78792	  89852	  15efc	002_led_interrupt_toggle_addr.elf
 Finished building: default.size.stdout
+ 
+12:42:36 **** Incremental Build of configuration Debug for project 002_led_interrupt_toggle_addr ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc -o "002_led_interrupt_toggle_addr.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Users\chandanar\Desktop\GitHub\PersonalProjects\FreeRTOS_with_BareMetal\workspace_stm32_freeRTOS_baremetal\002_led_interrupt_toggle_addr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002_led_interrupt_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002_led_interrupt_toggle_addr.elf
+ 
+arm-none-eabi-size   002_led_interrupt_toggle_addr.elf 
+arm-none-eabi-objdump -h -S  002_led_interrupt_toggle_addr.elf  > "002_led_interrupt_toggle_addr.list"
+   text	   data	    bss	    dec	    hex	filename
+  11044	     16	  78792	  89852	  15efc	002_led_interrupt_toggle_addr.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002_led_interrupt_toggle_addr.list
+ 
+12:44:10 **** Incremental Build of configuration Debug for project 002_led_interrupt_toggle_addr ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc -o "002_led_interrupt_toggle_addr.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Users\chandanar\Desktop\GitHub\PersonalProjects\FreeRTOS_with_BareMetal\workspace_stm32_freeRTOS_baremetal\002_led_interrupt_toggle_addr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002_led_interrupt_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002_led_interrupt_toggle_addr.elf
+ 
+arm-none-eabi-size   002_led_interrupt_toggle_addr.elf 
+arm-none-eabi-objdump -h -S  002_led_interrupt_toggle_addr.elf  > "002_led_interrupt_toggle_addr.list"
+   text	   data	    bss	    dec	    hex	filename
+  11044	     16	  78792	  89852	  15efc	002_led_interrupt_toggle_addr.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002_led_interrupt_toggle_addr.list
+ 
+12:44:36 **** Incremental Build of configuration Debug for project 002_led_interrupt_toggle_addr ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/002_led_interrupt_toggle_addr/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Include" -I"C:/Users/chandanar/Desktop/GitHub/PersonalProjects/FreeRTOS_with_BareMetal/workspace_stm32_freeRTOS_baremetal/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc -o "002_led_interrupt_toggle_addr.elf" @"objects.list"  -Wl,--start-group  -Wl,--end-group -mcpu=cortex-m4 -T"C:\Users\chandanar\Desktop\GitHub\PersonalProjects\FreeRTOS_with_BareMetal\workspace_stm32_freeRTOS_baremetal\002_led_interrupt_toggle_addr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002_led_interrupt_toggle_addr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002_led_interrupt_toggle_addr.elf
+ 
+arm-none-eabi-size   002_led_interrupt_toggle_addr.elf 
+arm-none-eabi-objdump -h -S  002_led_interrupt_toggle_addr.elf  > "002_led_interrupt_toggle_addr.list"
+   text	   data	    bss	    dec	    hex	filename
+  11044	     16	  78792	  89852	  15efc	002_led_interrupt_toggle_addr.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002_led_interrupt_toggle_addr.list
  
