@@ -1,0 +1,6 @@
+my_tasks.c:25:6:taskSetup	1
+my_tasks.c:33:6:senderTaskCreate	1
+my_tasks.c:46:6:senderTask	2
+my_tasks.c:70:6:receiverTaskCreate	1
+my_tasks.c:83:6:receiverTask	2
+my_tasks.c:99:6:initTasks	1

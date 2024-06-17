@@ -1,0 +1,58 @@
+/*
+ * my_tasks.c
+ *
+ *  Created on: May 8, 2024
+ *      Author: chandanar
+ */
+
+/* Include necessary header files */
+#include "my_tasks.h"
+#include "main.h"
+
+/* Declaration of a required task handles */
+TaskHandle_t xsenderTaskHandle = NULL
+
+/* Declare Queue Handles */
+QueueHandle_t xQueue;
+
+/**
+ * @brief This function is called, to setup/create required tasks
+ */
+void taskSetup(void) {
+	senderTaskCreate();
+	recieverTaskCreate();
+}
+
+/**
+ * @brief This function will create a sender queue task
+ */
+void senderTaskCreate(void) {
+	xTaskCreate(
+			senderTask,					// Function of a task
+			"Sender Queue Task",		// Name for a task
+			configMINIMAL_STACK_SIZE,	// Stack size for a task
+			NULL,						// Parameter of a task
+			tskIDLE_PRIORITY + 1,		// Priority of a task
+			&xsenderTaskHandle);
+}
+
+/**
+ * @brief This is a function of senderTask
+ */
+void senderTask(void *pvParameter) {
+	int i = 0;
+	BaseType_t xStatus;
+
+	while (1) {
+		xStatus = xQueue
+	}
+}
+
+/**
+ * @brief This function is called, to start the task scheduler
+ */
+void initTasks(void) {
+	vTaskStartScheduler();
+}
+
+

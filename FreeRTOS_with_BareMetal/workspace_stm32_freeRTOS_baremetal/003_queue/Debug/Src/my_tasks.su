@@ -1,0 +1,6 @@
+../Src/my_tasks.c:25:6:taskSetup	8	static
+../Src/my_tasks.c:33:6:senderTaskCreate	16	static
+../Src/my_tasks.c:46:6:senderTask	24	static
+../Src/my_tasks.c:70:6:receiverTaskCreate	16	static
+../Src/my_tasks.c:83:6:receiverTask	16	static
+../Src/my_tasks.c:99:6:initTasks	8	static
